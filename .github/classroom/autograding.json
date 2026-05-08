@@ -1,0 +1,46 @@
+{
+  "tests": [
+    {
+      "name": "Test CrearFigusTotales",
+      "command": "python3 -m unittest test_album_figus.TestCrearFigusTotales -v",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test MezclarFigus",
+      "command": "python3 -m unittest test_album_figus.TestMezclarFigus -v",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test CrearAlbumVacio",
+      "command": "python3 -m unittest test_album_figus.TestCrearAlbumVacio -v",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test EstaCompletoElAlbum",
+      "command": "python3 -m unittest test_album_figus.TestEstaCompletoElAlbum -v",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test ComprarFigusHastaCompletarAlbum",
+      "command": "python3 -m unittest test_album_figus.TestComprarFigusHastaCompletarAlbum -v",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test SimularCompletarAlbum",
+      "command": "python3 -m unittest test_album_figus.TestSimularCompletarAlbum -v",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test SimularMuchasPersonasCompletar",
+      "command": "python3 -m unittest test_album_figus.TestSimularMuchasPersonasCompletar -v",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
