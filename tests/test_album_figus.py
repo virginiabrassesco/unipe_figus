@@ -16,15 +16,15 @@ class TestCrearFigusTotales(unittest.TestCase):
 
     def test_un_mazo_cinco_cartas(self):
         resultado = crear_figus_totales(1, 5)
-        self.assertEqual(sorted(resultado), [1, 2, 3, 4, 5])
+        self.assertEqual(sorted(resultado), sorted([1, 2, 3, 4, 5]))
 
     def test_dos_mazos_cinco_cartas(self):
         resultado = crear_figus_totales(2, 5)
-        self.assertEqual(sorted(resultado), [1, 2, 3, 4, 5, 1, 2, 3, 4, 5])
+        self.assertEqual(sorted(resultado), sorted([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]))
 
     def test_tres_mazos_tres_cartas(self):
         resultado = crear_figus_totales(3, 3)
-        self.assertEqual(sorted(resultado), [1, 2, 3, 1, 2, 3, 1, 2, 3])
+        self.assertEqual(sorted(resultado), sorted([1, 2, 3, 1, 2, 3, 1, 2, 3]))
 
     def test_un_mazo_una_carta(self):
         resultado = crear_figus_totales(1, 1)
@@ -32,7 +32,7 @@ class TestCrearFigusTotales(unittest.TestCase):
 
     def test_cinco_mazos_dos_cartas(self):
         resultado = crear_figus_totales(5, 2)
-        self.assertEqual(sorted(resultado), [1, 2] * 5)
+        self.assertEqual(sorted(resultado), sorted([1, 2] * 5))
 
     def test_cantidad_total_figus(self):
         mazos, total_cartas = 4, 20
@@ -49,7 +49,7 @@ class TestMezclarFigus(unittest.TestCase):
         mezclar_figus(copia)
         self.assertCountEqual(copia, original)  # mismos elementos
         self.assertEqual(len(copia), len(original))  # misma longitud
-        self.assertEqual(sorted(copia), original)  # mismos elementos
+        self.assertNotEqual(copia, original)  # al mezclar no deberían ser iguales
 
     def test_mezcla_modifica_lista(self):
         original = [1, 2, 3, 4, 5][::-1]
@@ -57,16 +57,15 @@ class TestMezclarFigus(unittest.TestCase):
         mezclar_figus(copia)
         self.assertCountEqual(copia, original)  # mismos elementos
         self.assertEqual(len(copia), len(original))  # misma longitud
-        self.assertEqual(sorted(copia), original)  # mismos elementos
-
+        self.assertNotEqual(copia, original)  # al mezclar no deberían ser iguales
+        
     def test_mezcla_elementos_unicos(self):
         original = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         copia = original.copy()
         mezclar_figus(copia)
         self.assertCountEqual(copia, original)  # mismos elementos
         self.assertEqual(len(copia), len(original))  # misma longitud
-        self.assertEqual(sorted(copia), original)  # mismos elementos
-
+        self.assertNotEqual(copia, original)  # al mezclar no deberían ser iguales
 
 class TestCrearAlbumVacio(unittest.TestCase):
     """Pruebas para la función crear_album_vacio"""
@@ -171,10 +170,11 @@ class TestComprarFigusHastaCompletarAlbum(unittest.TestCase):
 class TestSimularCompletarAlbum(unittest.TestCase):
     """Pruebas para la función simular_completar_album"""
 
-    def test_resultado_mayor_o_igual_a_total_cartas(self):
+    def test_resultado_mayor_a_total_cartas(self):
+        # En el unico caso que es igual a la cantidad es cuando no están mezcladas, es poco probable
         mazos, total_cartas = 2, 10
         resultado = simular_completar_album(mazos, total_cartas)
-        self.assertGreaterEqual(resultado, total_cartas)
+        self.assertGreater(resultado, total_cartas)
 
     def test_resultado_menor_o_igual_total_figus(self):
         mazos, total_cartas = 3, 5
