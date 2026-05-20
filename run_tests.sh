@@ -11,7 +11,7 @@ if [ ! -f "album_figus.py" ]; then
 fi
 
 # Ejecutar pruebas
-python3 -m pytest tests/test_album_figus.py -v
+python3 -m pytest test_album_figus.py -v
 # En windows quizá es python (sin el 3)
 
 # Guardar el código de salida
