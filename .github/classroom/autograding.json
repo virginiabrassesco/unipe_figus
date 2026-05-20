@@ -2,187 +2,187 @@
   "tests": [
     {
       "name": "Test CrearFigusTotales - un_mazo_cinco_cartas",
-      "command": "pytest test_album_figus.py::TestCrearFigusTotales::test_un_mazo_cinco_cartas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_un_mazo_cinco_cartas -v --tb=short",
       "timeout": 10,
       "points": 2
     },
     {
       "name": "Test CrearFigusTotales - dos_mazos_cinco_cartas",
-      "command": "pytest test_album_figus.py::TestCrearFigusTotales::test_dos_mazos_cinco_cartas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_dos_mazos_cinco_cartas -v --tb=short",
       "timeout": 10,
       "points": 2
     },
     {
       "name": "Test CrearFigusTotales - tres_mazos_tres_cartas",
-      "command": "pytest test_album_figus.py::TestCrearFigusTotales::test_tres_mazos_tres_cartas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_tres_mazos_tres_cartas -v --tb=short",
       "timeout": 10,
       "points": 2
     },
     {
       "name": "Test CrearFigusTotales - un_mazo_una_carta",
-      "command": "pytest test_album_figus.py::TestCrearFigusTotales::test_un_mazo_una_carta -v --tb=short",
+      "command": "pytest test_album_figus.py::test_un_mazo_una_carta -v --tb=short",
       "timeout": 10,
       "points": 2
     },
     {
       "name": "Test CrearFigusTotales - cinco_mazos_dos_cartas",
-      "command": "pytest test_album_figus.py::TestCrearFigusTotales::test_cinco_mazos_dos_cartas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_cinco_mazos_dos_cartas -v --tb=short",
       "timeout": 10,
       "points": 1
     },
     {
       "name": "Test CrearFigusTotales - cantidad_total_figus",
-      "command": "pytest test_album_figus.py::TestCrearFigusTotales::test_cantidad_total_figus -v --tb=short",
+      "command": "pytest test_album_figus.py::test_cantidad_total_figus -v --tb=short",
       "timeout": 10,
       "points": 1
     },
     {
       "name": "Test MezclarFigus - mezcla_mantiene_elementos",
-      "command": "pytest test_album_figus.py::TestMezclarFigus::test_mezcla_mantiene_elementos -v --tb=short",
+      "command": "pytest test_album_figus.py::test_mezcla_mantiene_elementos -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test MezclarFigus - mezcla_modifica_lista",
-      "command": "pytest test_album_figus.py::TestMezclarFigus::test_mezcla_modifica_lista -v --tb=short",
+      "command": "pytest test_album_figus.py::test_mezcla_modifica_lista -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test MezclarFigus - mezcla_elementos_unicos",
-      "command": "pytest test_album_figus.py::TestMezclarFigus::test_mezcla_elementos_unicos -v --tb=short",
+      "command": "pytest test_album_figus.py::test_mezcla_elementos_unicos -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test CrearAlbumVacio - tres_posiciones",
-      "command": "pytest test_album_figus.py::TestCrearAlbumVacio::test_tres_posiciones -v --tb=short",
+      "command": "pytest test_album_figus.py::test_tres_posiciones -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test CrearAlbumVacio - una_posicion",
-      "command": "pytest test_album_figus.py::TestCrearAlbumVacio::test_una_posicion -v --tb=short",
+      "command": "pytest test_album_figus.py::test_una_posicion -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test CrearAlbumVacio - album_grande",
-      "command": "pytest test_album_figus.py::TestCrearAlbumVacio::test_album_grande -v --tb=short",
+      "command": "pytest test_album_figus.py::test_album_grande -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test EstaCompletoElAlbum - booleano_incompleto",
-      "command": "pytest test_album_figus.py::TestEstaCompletoElAlbum::test_album_booleano_incompleto -v --tb=short",
+      "command": "pytest test_album_figus.py::test_album_booleano_incompleto -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test EstaCompletoElAlbum - booleano_completo",
-      "command": "pytest test_album_figus.py::TestEstaCompletoElAlbum::test_album_booleano_completo -v --tb=short",
+      "command": "pytest test_album_figus.py::test_album_booleano_completo -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test EstaCompletoElAlbum - entero_incompleto_al_final",
-      "command": "pytest test_album_figus.py::TestEstaCompletoElAlbum::test_album_entero_incompleto_al_final -v --tb=short",
+      "command": "pytest test_album_figus.py::test_album_entero_incompleto_al_final -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test EstaCompletoElAlbum - entero_incompleto_al_inicio",
-      "command": "pytest test_album_figus.py::TestEstaCompletoElAlbum::test_album_entero_incompleto_al_inicio -v --tb=short",
+      "command": "pytest test_album_figus.py::test_album_entero_incompleto_al_inicio -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test ComprarFigusHastaCompletarAlbum - sin_repetidas",
-      "command": "pytest test_album_figus.py::TestComprarFigusHastaCompletarAlbum::test_completar_sin_repetidas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_completar_sin_repetidas -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test ComprarFigusHastaCompletarAlbum - con_repetidas",
-      "command": "pytest test_album_figus.py::TestComprarFigusHastaCompletarAlbum::test_completar_con_repetidas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_completar_con_repetidas -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test ComprarFigusHastaCompletarAlbum - muchas_repetidas",
-      "command": "pytest test_album_figus.py::TestComprarFigusHastaCompletarAlbum::test_completar_muchas_repetidas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_completar_muchas_repetidas -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test ComprarFigusHastaCompletarAlbum - album_con_enteros",
-      "command": "pytest test_album_figus.py::TestComprarFigusHastaCompletarAlbum::test_completar_album_con_enteros -v --tb=short",
+      "command": "pytest test_album_figus.py::test_completar_album_con_enteros -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test ComprarFigusHastaCompletarAlbum - album_ya_completo",
-      "command": "pytest test_album_figus.py::TestComprarFigusHastaCompletarAlbum::test_album_ya_completo -v --tb=short",
+      "command": "pytest test_album_figus.py::test_album_ya_completo -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test SimularCompletarAlbum - mayor_a_total_cartas",
-      "command": "pytest test_album_figus.py::TestSimularCompletarAlbum::test_resultado_mayor_a_total_cartas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_resultado_mayor_a_total_cartas -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test SimularCompletarAlbum - menor_o_igual_total_figus",
-      "command": "pytest test_album_figus.py::TestSimularCompletarAlbum::test_resultado_menor_o_igual_total_figus -v --tb=short",
+      "command": "pytest test_album_figus.py::test_resultado_menor_o_igual_total_figus -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test SimularCompletarAlbum - un_mazo_una_figu",
-      "command": "pytest test_album_figus.py::TestSimularCompletarAlbum::test_un_mazo_una_figu -v --tb=short",
+      "command": "pytest test_album_figus.py::test_un_mazo_una_figu -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test SimularCompletarAlbum - un_mazo_con_todas_distintas",
-      "command": "pytest test_album_figus.py::TestSimularCompletarAlbum::test_un_mazo_con_todas_distintas -v --tb=short",
+      "command": "pytest test_album_figus.py::test_un_mazo_con_todas_distintas -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test SimularCompletarAlbum - tipo_retorno",
-      "command": "pytest test_album_figus.py::TestSimularCompletarAlbum::test_tipo_retorno -v --tb=short",
+      "command": "pytest test_album_figus.py::test_tipo_retorno -v --tb=short",
       "timeout": 10,
       "points": 3
     },
     {
       "name": "Test SimularMuchasPersonasCompletar - devuelve_promedio_flotante",
-      "command": "pytest test_album_figus.py::TestSimularMuchasPersonasCompletar::test_devuelve_promedio_flotante -v --tb=short",
+      "command": "pytest test_album_figus.py::test_devuelve_promedio_flotante -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test SimularMuchasPersonasCompletar - promedio_en_rango_esperado",
-      "command": "pytest test_album_figus.py::TestSimularMuchasPersonasCompletar::test_promedio_en_rango_esperado -v --tb=short",
+      "command": "pytest test_album_figus.py::test_promedio_en_rango_esperado -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test SimularMuchasPersonasCompletar - un_mazo_una_figu_promedio",
-      "command": "pytest test_album_figus.py::TestSimularMuchasPersonasCompletar::test_un_mazo_una_figu_promedio -v --tb=short",
+      "command": "pytest test_album_figus.py::test_un_mazo_una_figu_promedio -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test SimularMuchasPersonasCompletar - un_mazo_promedio_igual_total",
-      "command": "pytest test_album_figus.py::TestSimularMuchasPersonasCompletar::test_un_mazo_promedio_igual_total -v --tb=short",
+      "command": "pytest test_album_figus.py::test_un_mazo_promedio_igual_total -v --tb=short",
       "timeout": 10,
       "points": 4
     },
     {
       "name": "Test SimularMuchasPersonasCompletar - tres_personas_album_pequeno",
-      "command": "pytest test_album_figus.py::TestSimularMuchasPersonasCompletar::test_tres_personas_album_pequeno -v --tb=short",
+      "command": "pytest test_album_figus.py::test_tres_personas_album_pequeno -v --tb=short",
       "timeout": 10,
       "points": 4
     }
